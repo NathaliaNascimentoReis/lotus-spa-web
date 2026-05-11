@@ -1,10 +1,14 @@
 import { Link } from 'react-router-dom';
 import styles from './NavBar.module.css';
+import logo from '../../assets/logo.png';
 
-export default function NarBar() {
+export default function NavBar() {
     return (
         <nav className={styles.navbar}>
-            <div className={styles.logo}>Lotus Spa</div>
+            <div className={styles.logo}>
+                <img src={logo} alt="Logo do Lotus Spa" width={120} height={100} />
+                <h1>LOTUS SPA</h1>
+            </div>
             <ul className={styles.links}>
                 <li>
                     <Link to="/">Home</Link>
